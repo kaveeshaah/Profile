@@ -96,6 +96,7 @@
     margin-top: 3rem;
     flex-wrap: wrap;
     font-size: 4.5rem;
+}
 .figma-skills, .figma-video {
     background: var(--second-bg-color);
     font-size: 1.7rem;
@@ -1040,5 +1041,4 @@ input[type="submit"]:hover, .btn:hover {
         width: 100%;
         padding: 1.5rem 1rem;
     }
-}
 }
