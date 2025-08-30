@@ -51,8 +51,8 @@
 }
 
 .ui-video-item video {
-    width: 80%;
-    max-width: 320px;
+    width: 95%;
+    max-width: 480px;
     height: auto;
     border-radius: 1rem;
     box-shadow: 0 2px 12px rgba(0,255,238,0.10);
@@ -109,8 +109,8 @@
     color: var(--text-color);
 }
 .figma-video video {
-    width: 80%;
-    max-width: 320px;
+    width: 95%;
+    max-width: 480px;
     height: auto;
     border-radius: 1rem;
     box-shadow: 0 2px 12px rgba(0,255,238,0.10);
