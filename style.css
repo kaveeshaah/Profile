@@ -667,7 +667,7 @@ span {
 }
 
 .skill-info p {
-    font-size: 1.1rem;
+    font-size: 1.6rem;
     color: var(--text-color);
     line-height: 1.8rem;
     transition: color 0.3s;
@@ -679,7 +679,7 @@ span {
 
 .modern-skills .skill-info ul {
     list-style: disc inside;
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     color: var(--text-color);
     margin-left: 1rem;
     margin-bottom: 0.5rem;
@@ -693,7 +693,7 @@ span {
 .modern-skills .skill-info ul li {
     color: var(--text-color);
     background: none;
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     letter-spacing: 0.2px;
