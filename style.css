@@ -92,13 +92,13 @@
     display: flex;
     gap: 3rem;
     justify-content: center;
-    align-items: flex-start;
+    font-size: 2.5rem;
     margin-top: 3rem;
     flex-wrap: wrap;
-}
+    font-size: 4.5rem;
 .figma-skills, .figma-video {
     background: var(--second-bg-color);
-    border-radius: 1.5rem;
+    font-size: 1.7rem;
     box-shadow: 0 2px 16px rgba(0,255,238,0.10);
     padding: 2rem 2.5rem;
     margin-bottom: 2rem;
@@ -1040,4 +1040,5 @@ input[type="submit"]:hover, .btn:hover {
         width: 100%;
         padding: 1.5rem 1rem;
     }
+}
 }
