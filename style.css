@@ -209,7 +209,7 @@
 }
 
 html {
-    font-size: 60%;
+    font-size: 55%;
     overflow-x: hidden;
 }
 
@@ -307,11 +307,11 @@ span {
 .home-content h3 {
     margin-bottom: 2rem;
     margin-top: 2rem;
-    font-size: 3.5rem;
+    font-size: 2rem;
 }
 
 .home-content h1 {
-    font-size: 7rem;
+    font-size: 3.5rem;
     font-weight: 700;
     margin-top: 1.5rem;
     line-height: 1;
@@ -488,7 +488,7 @@ span {
 }
 
 .heading {
-    font-size: 8rem;
+    font-size: 4rem;
     text-align: center;
     margin: 5rem 0;
 }
