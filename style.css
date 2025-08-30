@@ -51,12 +51,13 @@
 }
 
 .ui-video-item video {
-    width: 80%;
-    max-width: 320px;
+    display: block;
+    width: 100%;
+    max-width: 480px;
     height: auto;
     border-radius: 1rem;
     box-shadow: 0 2px 12px rgba(0,255,238,0.10);
-    margin-bottom: 1.2rem;
+    margin: 0 auto 1.2rem auto;
 }
 
 @media (max-width: 900px) {
@@ -109,12 +110,13 @@
     color: var(--text-color);
 }
 .figma-video video {
-    width: 80%;
-    max-width: 320px;
+    display: block;
+    width: 100%;
+    max-width: 480px;
     height: auto;
     border-radius: 1rem;
     box-shadow: 0 2px 12px rgba(0,255,238,0.10);
-    margin-bottom: 1.2rem;
+    margin: 0 auto 1.2rem auto;
 }
 @media (max-width: 900px) {
     .figma-content {
