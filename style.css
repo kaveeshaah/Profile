@@ -53,11 +53,19 @@
 .ui-video-item video {
     display: block;
     width: 100%;
-    max-width: 480px;
+    max-width: 420px;
     height: auto;
     border-radius: 1rem;
-    box-shadow: 0 2px 12px rgba(0,255,238,0.10);
+    box-shadow: 0 4px 24px rgba(0,255,238,0.18);
     margin: 0 auto 1.2rem auto;
+    background: #111;
+    border: 2px solid var(--main-color);
+    padding: 8px;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+.ui-video-item video:hover {
+    box-shadow: 0 8px 32px rgba(0,255,238,0.28);
+    border-color: #fff;
 }
 
 @media (max-width: 900px) {
@@ -112,12 +120,21 @@
 .figma-video video {
     display: block;
     width: 100%;
-    max-width: 480px;
+    max-width: 420px;
     height: auto;
     border-radius: 1rem;
-    box-shadow: 0 2px 12px rgba(0,255,238,0.10);
+    box-shadow: 0 4px 24px rgba(0,255,238,0.18);
     margin: 0 auto 1.2rem auto;
+    background: #111;
+    border: 2px solid var(--main-color);
+    padding: 8px;
+    transition: box-shadow 0.3s, border 0.3s;
 }
+.figma-video video:hover {
+    box-shadow: 0 8px 32px rgba(0,255,238,0.28);
+    border-color: #fff;
+}
+
 @media (max-width: 900px) {
     .figma-content {
         flex-direction: column;
