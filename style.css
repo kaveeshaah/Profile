@@ -114,13 +114,13 @@
 }
 .figma-skills ul {
     margin-left: 1rem;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     color: var(--text-color);
 }
 .figma-video video {
     display: block;
     width: 100%;
-    max-width: 420px;
+    max-width: 500px;
     height: auto;
     border-radius: 1rem;
     box-shadow: 0 4px 24px rgba(0,255,238,0.18);
