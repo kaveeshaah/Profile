@@ -486,43 +486,71 @@ span {
 }
 
 .skill-box {
-    background-color: var(--main-color);
-    height: 300px;
-    border-radius: 3rem;
-    border: 5px solid transparent;
+    background: var(--second-bg-color);
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 16px rgba(0,255,238,0.08);
+    padding: 2rem 2.5rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+    border: 2px solid transparent;
     cursor: pointer;
-    transition: 0.4s ease-in-out;
 }
 
 .skill-box:hover {
-    background: white;
-    color: black;
-    border: 5px solid var(--main-color);
-    transform: scale(1.03);
-}
-
-.skill-box .skill-info{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    max-height: 200px;
-    justify-content: left;
-    align-items: baseline;
-    padding: 5rem 5rem;
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0,255,238,0.18);
+    border: 2px solid var(--main-color);
+    background: linear-gradient(90deg, rgba(0,255,238,0.08) 0%, var(--second-bg-color) 100%);
 }
 
 .skill-info h4 {
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 2;
+    color: var(--main-color);
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+    transition: color 0.3s;
+}
+
+.skill-box:hover .skill-info h4 {
+    color: #fff;
+    text-shadow: 0 0 8px var(--main-color);
 }
 
 .skill-info p {
-    font-size: 1.6rem;
-    font-weight: 600;
-    max-height: 100px;
-    line-height: 1.7;
-    margin: auto;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    line-height: 1.8rem;
+    transition: color 0.3s;
+}
+
+.skill-box:hover .skill-info p {
+    color: var(--main-color);
+}
+
+.modern-skills .skill-info ul {
+    list-style: disc inside;
+    font-size: 1.15rem;
+    color: var(--text-color);
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 2rem;
+    padding-left: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+.modern-skills .skill-info ul li {
+    color: var(--text-color);
+    background: none;
+    font-size: 1.15rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+.modern-skills .skill-box:hover .skill-info ul,
+.modern-skills .skill-box:hover .skill-info ul li {
+    color: var(--main-color);
 }
 
 .projects {
@@ -530,166 +558,232 @@ span {
 }
 
 .projects-box {
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    background: var(--second-bg-color);
+    border-radius: 2rem;
+    box-shadow: 0 4px 32px rgba(0,255,238,0.08);
+    padding: 4rem 3% 4rem;
+    margin: 4rem 0;
 }
 
 .projects-box .heading {
-    margin-bottom: 5rem;
-}
-
-.projects-box img {
-    width: 30rem;
-    height: auto;
-    border-radius: 1rem;
-    border: 3px solid var(--main-color);
-    box-shadow: 0 0 25px var(--main-color);
-    object-fit: contain;
+    font-size: 2.8rem;
+    color: var(--main-color);
+    margin-bottom: 2.5rem;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 .wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: stretch;
 }
 
 .project-item {
-    min-height: 550px;
-    max-width: 450px;
-    background: rgba(0, 0, 0, 0.7);
-    border: 3px solid rgba(238, 238, 238, 0.2);
-    border-radius: 2rem;
-    margin: 0 2rem;
-    padding: 30px 60px;
-    cursor: pointer;
+    background: rgba(0,0,0,0.18);
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 16px rgba(0,255,238,0.10);
+    padding: 2rem 2rem 2.5rem 2rem;
+    max-width: 370px;
+    flex: 1 1 320px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 1.5rem;
-    color: white;
-    transition: 0.4s;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+    border: 2px solid transparent;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
 }
 
 .project-item:hover {
-    border: 3px solid var(--main-color);
-    transform: translateY(-10px)scale(1.03);
-    box-shadow: 0 0 50px var(--main-color);
+    transform: translateY(-10px) scale(1.04);
+    box-shadow: 0 8px 32px rgba(0,255,238,0.18);
+    border: 2px solid var(--main-color);
+    background: linear-gradient(90deg, rgba(0,255,238,0.10) 0%, var(--second-bg-color) 100%);
 }
 
-.project-item  h2 {
-    font-size: 2.8rem;
+.project-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 2px 12px rgba(0,255,238,0.10);
+    transition: box-shadow 0.3s;
 }
 
-.project-item  p {
-    font-size: 1.3rem;
+.project-item:hover img {
+    box-shadow: 0 4px 24px rgba(0,255,238,0.18);
+}
+
+.project-item h2 {
+    font-size: 1.4rem;
+    color: var(--main-color);
+    margin-bottom: 0.8rem;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.project-item p {
+    font-size: 1.05rem;
+    color: var(--text-color);
+    text-align: center;
+    line-height: 1.7rem;
+    margin-bottom: 0.5rem;
 }
 
 .contact {
-    background: var(--bg-color);
+    background: var(--second-bg-color);
+    border-radius: 2rem;
+    box-shadow: 0 4px 32px rgba(0,255,238,0.08);
+    padding: 5rem 12% 5rem;
+    margin: 4rem 0;
 }
 
-.contact h2 {
-    margin-bottom: 3rem;
-    color: white;
+.contact .heading {
+    font-size: 2.8rem;
+    color: var(--main-color);
+    margin-bottom: 2.5rem;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 .contact form {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    margin: 5rem auto;
-    text-align: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: rgba(0,0,0,0.18);
+    border-radius: 1.5rem;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 2px 16px rgba(0,255,238,0.10);
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.contact form .input-box {
+.input-group {
     display: flex;
-    justify-content: center;
+    gap: 2rem;
     flex-wrap: wrap;
 }
 
-.contact form .input-box input,
-.contact form textarea {
-    width: 100%;
-    padding: 2.5rem;
-    font-size: 1.8rem;
-    color: var(--text-color);
+.input-box {
+    flex: 1 1 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.input-group-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
     background: var(--bg-color);
-    border-radius: 2rem;
+    color: var(--text-color);
     border: 2px solid var(--main-color);
-    margin: 1.5rem 0;
-    resize: 0;
+    border-radius: 1rem;
+    padding: 1rem 1.2rem;
+    font-size: 1.1rem;
+    transition: border 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(0,255,238,0.06);
+    resize: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border: 2px solid #fff;
+    box-shadow: 0 0 12px var(--main-color);
+}
+
+input[type="submit"], .btn {
+    background: var(--main-color);
+    color: #000;
+    border-radius: 1rem;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+    box-shadow: 0 2px 12px rgba(0,255,238,0.10);
+}
+
+input[type="submit"]:hover, .btn:hover {
+    background: #fff;
+    color: var(--main-color);
+    transform: scale(1.05);
 }
 
 .footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    padding: 40px 0;	
     background: var(--second-bg-color);
+    color: var(--text-color);
+    padding: 3rem 0 2rem 0;
+    border-top: 2px solid var(--main-color);
+    box-shadow: 0 -2px 16px rgba(0,255,238,0.08);
+    text-align: center;
+    border-radius: 2rem 2rem 0 0;
+    margin-top: 4rem;
 }
 
 .footer .social {
-    text-align: center;
-    padding-bottom: 25px;
-    color: var(--main-color);
+    margin-bottom: 1.5rem;
 }
 
 .footer .social a {
-    font-size: 25px;
-    color: var(--main-color);
-    border: 2px solid var(--main-color);
-    width: 42px;
-    height: 42px;
-    line-height: 42px;	
     display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    margin: 0 10px;
-    transition: 0.3s ease-in-out;
+    margin: 0 1rem;
+    color: var(--main-color);
+    font-size: 2.2rem;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .footer .social a:hover {
-    transform: scale(1.2)translateY(-10px);
-    background-color: var(--main-color);
-    color: black;
-    box-shadow: 0 0 25px var(--main-color);
+    color: #fff;
+    transform: scale(1.2);
+    text-shadow: 0 0 12px var(--main-color);
 }
 
-.footer ul {
-    margin-top: 0;
+.footer .list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    list-style: none;
     padding: 0;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
-    text-align: center;
 }
 
-.footer ul li a{
-    color: white;
-    border-bottom: 3px solid transparent;
-    transition: 0.3s ease-in-out;
+.footer .list li a {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    transition: color 0.3s;
+    text-decoration: none;
+    padding: 0.2rem 0.8rem;
+    border-radius: 0.5rem;
 }
 
-.footer ul li a:hover {
-    border-bottom: 3px solid var(--main-color);
-}	
-
-.footer ul li {
-    display: inline-block;
-    margin: 0 15px;
+.footer .list li a:hover {
+    color: var(--main-color);
+    background: rgba(0,255,238,0.08);
 }
 
 .footer .copyright {
-    margin-top: 50px;
-    text-align: center;
-    font-size: 16px;
-    color: white;
+    color: #aaa;
+    font-size: 1rem;
+    margin-top: 1rem;
+    letter-spacing: 0.5px;
 }
 
 @media (max-width: 1285px) {
@@ -783,5 +877,16 @@ span {
     }
     .skills-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .figma-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .figma-skills, .figma-video {
+        width: 100%;
+        padding: 1.5rem 1rem;
     }
 }
