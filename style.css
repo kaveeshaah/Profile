@@ -120,7 +120,7 @@
 .figma-video video {
     display: block;
     width: 100%;
-    max-width: 500px;
+    max-width: 420px;
     height: auto;
     border-radius: 1rem;
     box-shadow: 0 4px 24px rgba(0,255,238,0.18);
@@ -667,7 +667,7 @@ span {
 }
 
 .skill-info p {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     color: var(--text-color);
     line-height: 1.8rem;
     transition: color 0.3s;
@@ -679,7 +679,7 @@ span {
 
 .modern-skills .skill-info ul {
     list-style: disc inside;
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     color: var(--text-color);
     margin-left: 1rem;
     margin-bottom: 0.5rem;
@@ -693,7 +693,7 @@ span {
 .modern-skills .skill-info ul li {
     color: var(--text-color);
     background: none;
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     letter-spacing: 0.2px;
