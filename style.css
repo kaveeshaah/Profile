@@ -1,3 +1,135 @@
+/* UI Design Videos Section */
+.ui-design-videos {
+    background: var(--second-bg-color);
+    padding: 5rem 0 5rem 0;
+}
+
+.ui-videos-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 3rem;
+}
+
+.ui-video-item {
+    background: rgba(0,0,0,0.18);
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 16px rgba(0,255,238,0.10);
+    padding: 2rem 2rem 2.5rem 2rem;
+    max-width: 420px;
+    flex: 1 1 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+    border: 2px solid transparent;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.ui-video-item h3 {
+    color: var(--main-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.ui-video-item p {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.ui-video-item ul {
+    margin: 0.5rem 0 0.5rem 1.2rem;
+    font-size: 1.1rem;
+}
+
+.ui-video-item video {
+    width: 80%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 2px 12px rgba(0,255,238,0.10);
+    margin-bottom: 1.2rem;
+}
+
+@media (max-width: 900px) {
+    .ui-videos-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .ui-video-item {
+        max-width: 95vw;
+        padding: 1.5rem 1rem;
+    }
+    .ui-video-item video {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Figma Designs Section */
+.figma-designs {
+    background: var(--bg-color);
+    padding: 5rem 0 5rem 0;
+}
+.figma-content {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+.figma-skills, .figma-video {
+    background: var(--second-bg-color);
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 16px rgba(0,255,238,0.10);
+    padding: 2rem 2.5rem;
+    margin-bottom: 2rem;
+    flex: 1 1 320px;
+    min-width: 280px;
+    max-width: 420px;
+}
+.figma-skills h3, .figma-video h3 {
+    color: var(--main-color);
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.figma-skills ul {
+    margin-left: 1rem;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+.figma-video video {
+    width: 80%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 2px 12px rgba(0,255,238,0.10);
+    margin-bottom: 1.2rem;
+}
+@media (max-width: 900px) {
+    .figma-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .figma-skills, .figma-video {
+        max-width: 95vw;
+        padding: 1.5rem 1rem;
+    }
+    .figma-video video {
+        width: 100%;
+        max-width: 100%;
+    }
+}
 * {
     margin: 0;
     padding: 0;
