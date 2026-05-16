@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,14 @@
     <link rel="icon" type="image/svg+xml" href="mk-logo.svg">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+    <div class="custom-cursor"></div>
+    <canvas id="matrixCanvas" class="global-code-bg"></canvas>
     <div class="loader">
         <div class="pulse-container">
             <div class="pulse-circle"></div>
@@ -24,7 +30,9 @@
 
         <nav class="navbar">
             <a href="index.html">Home</a>
+            <a href="#about">About</a>
             <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
@@ -33,86 +41,111 @@
 
     <section class="home" id="home">
         <div class="home-content">
-            <h1>Hi, It's <span>Milani Kaveesha</span></h1>
-            <h3 class="text-animation">I'm a <span></span></h3>
-            <p>
+            <h1 class="scroll-animate">Hi, It's <span>Milani Kaveesha</span></h1>
+            <h3 class="text-animation scroll-animate">I'm a <span></span></h3>
+            <p class="scroll-animate">
                 Aspiring software engineer currently pursuing my undergraduate studies at ICBT Campus in Colombo.
             </p>
 
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/milani-kaveesha-186a89215/" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+            <div class="social-icons scroll-animate">
+                <a href="https://www.linkedin.com/in/milani-kaveesha-186a89215/" aria-label="LinkedIn"><i
+                        class='bx bxl-linkedin'></i></a>
                 <a href="https://github.com/kaveeshaah" aria-label="GitHub"><i class='bx bxl-github'></i></a>
                 <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
                 <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
             </div>
 
-            <div class="btn-group">
+            <div class="btn-group scroll-animate">
                 <a href="#" class="btn">Hire</a>
                 <a href="#contact" class="btn">Contact</a>
+                <a href="Milani Kaveesha - CV.pdf" download class="btn">Download CV</a>
             </div>
         </div>
 
-        <div class="home-img">
+        <div class="home-img scroll-animate">
             <img src="main.jpg" alt="Milani Kaveesha profile photo">
         </div>
     </section>
+
+    <section class="about" id="about">
+        <h2 class="heading scroll-animate">About <span>Me</span></h2>
+        <div class="about-content">
+            <div class="about-text scroll-animate" style="--anim-delay: 0.1s">
+                <p>My journey into technology started with a deep curiosity for how digital experiences are crafted. As
+                    an aspiring <span class="highlight">Software Engineer</span> and <span class="highlight">UI/UX
+                        Designer</span>, I bridge the gap between aesthetics and functionality.</p>
+                <p>I am currently completing my undergraduate studies at Cardiff Metropolitan University, having already
+                    gained enterprise experience building internal management systems at Sunquick Lanka. I am passionate
+                    about writing clean code, designing intuitive user interfaces, and constantly pushing the boundaries
+                    of modern web development.</p>
+                <p>When I'm not coding or wireframing in Figma, you can usually find me exploring new tech trends and
+                    studying modern design architectures.</p>
+            </div>
+            <div class="about-cv scroll-animate" style="--anim-delay: 0.3s">
+                <iframe src="Milani Kaveesha - CV.pdf" title="Milani Kaveesha CV"></iframe>
+            </div>
+        </div>
+    </section>
     <section class="ui-design-videos" id="ui-design-videos">
-        <h2 class="heading">UI Design Videos</h2>
+        <h2 class="heading scroll-animate">UI Design Videos</h2>
         <div class="ui-videos-content">
-            <div class="ui-video-item">
+            <div class="ui-video-item scroll-animate" style="--anim-delay: 0.1s">
                 <h3>Travel Website & Recipe App</h3>
                 <video width="100%" height="auto" controls>
                     <source src="videos/travelUI.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <p>This video features my extraordinary travel website UI, including advanced prototyping and interactive flows, as well as the UI design for a supermarket management system. Both designs were created in Figma, focusing on usability, clean layout, and engaging user experiences.</p>
+                <p>This video features my extraordinary travel website UI, including advanced prototyping and
+                    interactive flows, as well as the UI design for a supermarket management system. Both designs were
+                    created in Figma, focusing on usability, clean layout, and engaging user experiences.</p>
             </div>
-            <div class="ui-video-item">
+            <div class="ui-video-item scroll-animate" style="--anim-delay: 0.3s">
                 <h3>UI Design Showcase</h3>
                 <video width="100%" height="auto" controls>
                     <source src="videos/UIall.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <p>This video features a collection of my UI designs, including:
-                    <ul>
-                        <li>Learning Management System (LMS) UI</li>
-                        <li>Travel Booking Platform UI</li>
-                        <li>Supermarket System UI</li>
-                        <li>Other web and mobile app interfaces</li>
-                    </ul>
-                    Each design focuses on intuitive navigation, accessibility, and modern aesthetics.</p>
+                <ul>
+                    <li>Learning Management System (LMS) UI</li>
+                    <li>Travel Booking Platform UI</li>
+                    <li>Supermarket System UI</li>
+                    <li>Other web and mobile app interfaces</li>
+                </ul>
+                Each design focuses on intuitive navigation, accessibility, and modern aesthetics.</p>
             </div>
         </div>
     </section>
 
-        <section class="figma-designs" id="figma-designs">
-            <h2 class="heading">Figma Design Skills & Recipe App Demo</h2>
-            <div class="figma-content">
-                <div class="figma-skills">
-                    <h3>Figma Design Skills</h3>
-                    <ul>
-                        <li>UI/UX design for web and mobile applications</li>
-                        <li>Wireframing and prototyping</li>
-                        <li>Component-based design systems</li>
-                        <li>Collaboration with developers and stakeholders</li>
-                        <li>Responsive and accessible design</li>
-                    </ul>
-                </div>
-                <div class="figma-video">
-                    <h3>Recipe App - Full Stack Project Demo</h3>
-                    <video width="100%" height="auto" controls>
-                        <source src="videos/recipeApp.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p>This video demonstrates the features and UI of my full stack Recipe App, designed in Figma and developed using modern web technologies.</p>
-                </div>
+    <section class="figma-designs" id="figma-designs">
+        <h2 class="heading scroll-animate">Figma Design Skills & Recipe App Demo</h2>
+        <div class="figma-content">
+            <div class="figma-skills scroll-animate" style="--anim-delay: 0.1s">
+                <h3>Figma Design Skills</h3>
+                <ul>
+                    <li>UI/UX design for web and mobile applications</li>
+                    <li>Wireframing and prototyping</li>
+                    <li>Component-based design systems</li>
+                    <li>Collaboration with developers and stakeholders</li>
+                    <li>Responsive and accessible design</li>
+                </ul>
             </div>
-        </section>
+            <div class="figma-video scroll-animate" style="--anim-delay: 0.3s">
+                <h3>Recipe App - Full Stack Project Demo</h3>
+                <video width="100%" height="auto" controls>
+                    <source src="videos/recipeApp.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>This video demonstrates the features and UI of my full stack Recipe App, designed in Figma and
+                    developed using modern web technologies.</p>
+            </div>
+        </div>
+    </section>
     <section class="education" id="education">
-        <h2 class="heading">My <span>Education</span></h2>
+        <h2 class="heading scroll-animate">My <span>Education</span></h2>
 
         <div class="timeline-items">
-            <div class="timeline-item">
+            <div class="timeline-item scroll-animate">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2023</div>
                 <div class="timeline-content">
@@ -121,7 +154,7 @@
                 </div>
             </div>
 
-            <div class="timeline-item">
+            <div class="timeline-item scroll-animate">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2023-2025</div>
                 <div class="timeline-content">
@@ -130,7 +163,7 @@
                 </div>
             </div>
 
-            <div class="timeline-item">
+            <div class="timeline-item scroll-animate">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2025-2026</div>
                 <div class="timeline-content">
@@ -141,57 +174,123 @@
         </div>
     </section>
 
+    <section class="experience" id="experience">
+        <h2 class="heading scroll-animate">My <span>Experience</span></h2>
+
+        <div class="experience-content">
+            <div class="code-window scroll-animate">
+                <div class="window-header">
+                    <div class="mac-buttons">
+                        <span class="btn-red"></span>
+                        <span class="btn-yellow"></span>
+                        <span class="btn-green"></span>
+                    </div>
+                    <div class="window-title">~/experience/sunquick_internship.md</div>
+                </div>
+                <div class="window-body">
+                    <div class="experience-header">
+                        <h3>Software Engineer Intern</h3>
+                        <h4>Sunquick Lanka Pvt Ltd <span class="experience-date">| 2025 Dec - 2026 June</span></h4>
+                    </div>
+                    <div class="experience-body">
+                        <p>During my internship at Sunquick Lanka Pvt Ltd, I gained hands-on experience in full-stack
+                            software development by contributing to real-world industry applications and internal
+                            business systems. I was involved in developing and maintaining web applications using modern
+                            technologies such as CodeIgniter (CI4), React, PHP, JavaScript, HTML, CSS, and SQL.</p>
+
+                        <p>I worked on industry-level internal websites and portals that supported business operations,
+                            including service management and dispenser tracking systems. My responsibilities included
+                            developing responsive user interfaces, handling backend logic, integrating APIs, managing
+                            databases, and improving system workflows. I also worked with REST APIs for data
+                            communication between systems and applications.</p>
+
+                        <p>In addition to web development, I gained exposure to mobile application development using
+                            Android Studio, where I contributed to features related to dispenser tracking and QR-based
+                            operations. I also developed a basic understanding of Microsoft Dynamics 365 (D365) and its
+                            role in manufacturing and operational workflows.</p>
+
+                        <div class="experience-highlights">
+                            <h5>Projects & Contributions:</h5>
+                            <ul>
+                                <li>Dispenser Tracking & Service Management Application</li>
+                                <li>Internal Web Portals and Management Systems</li>
+                                <li>QR Code Scanning & Tracking Features</li>
+                                <li>API Integration and Backend Development</li>
+                                <li>Database Design and Data Handling</li>
+                                <li>Manufacturing & Operational Workflow Support Systems</li>
+                            </ul>
+                        </div>
+
+                        <p class="experience-conclusion">This internship strengthened my practical knowledge in software
+                            engineering, problem-solving, teamwork, and enterprise-level application development while
+                            working in a professional corporate environment.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
     <section class="skills" id="skills">
-        <h2 class="heading">Skills & Expertise</h2>
+        <h2 class="heading scroll-animate">Skills & Expertise</h2>
         <div class="skills-container modern-skills">
-            <div class="skill-box">
+            <div class="skill-box scroll-animate" style="--anim-delay: 0.1s">
                 <div class="skill-info">
                     <h4>Frontend Development</h4>
                     <ul>
-                        <li>HTML, CSS, JavaScript, React.js</li>
-                        <li>Flutter for cross-platform mobile apps</li>
-                        <li>UI/UX design with Figma</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React.js</li>
+                        <li>Flutter</li>
+                        <li>UI/UX Design</li>
+                        <li>Figma</li>
                     </ul>
                 </div>
             </div>
-            <div class="skill-box">
+            <div class="skill-box scroll-animate" style="--anim-delay: 0.2s">
                 <div class="skill-info">
                     <h4>Backend & Databases</h4>
                     <ul>
-                        <li>Node.js, Express.js, MongoDB</li>
-                        <li>SQLite for mobile apps</li>
-                        <li>RESTful API development</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>MongoDB</li>
+                        <li>SQLite</li>
+                        <li>RESTful APIs</li>
                     </ul>
                 </div>
             </div>
-            <div class="skill-box">
+            <div class="skill-box scroll-animate" style="--anim-delay: 0.3s">
                 <div class="skill-info">
                     <h4>Project Experience</h4>
                     <ul>
-                        <li>CityCycle Rentals Android app</li>
-                        <li>QR Code Attendance System (MERN stack)</li>
-                        <li>UI/UX prototyping for travel & finance apps</li>
+                        <li>Android Dev</li>
+                        <li>MERN Stack</li>
+                        <li>UI/UX Prototyping</li>
                     </ul>
                 </div>
             </div>
-            <div class="skill-box">
+            <div class="skill-box scroll-animate" style="--anim-delay: 0.4s">
                 <div class="skill-info">
                     <h4>Tools & Technologies</h4>
                     <ul>
-                        <li>Figma, Adobe XD, SceneBuilder (JavaFX)</li>
-                        <li>Visual Studio, Android Studio, WAMP Server</li>
+                        <li>Figma</li>
+                        <li>Adobe XD</li>
+                        <li>SceneBuilder</li>
+                        <li>Visual Studio</li>
+                        <li>Android Studio</li>
+                        <li>WAMP Server</li>
                         <li>Git & GitHub</li>
                     </ul>
                 </div>
             </div>
-            <div class="skill-box">
+            <div class="skill-box scroll-animate" style="--anim-delay: 0.5s">
                 <div class="skill-info">
                     <h4>Soft Skills</h4>
                     <ul>
-                        <li>Teamwork & collaboration</li>
-                        <li>Problem-solving & debugging</li>
-                        <li>Creative design thinking</li>
-                        <li>Attention to detail</li>
+                        <li>Teamwork</li>
+                        <li>Problem-solving</li>
+                        <li>Debugging</li>
+                        <li>Creative Design</li>
+                        <li>Attention to Detail</li>
                     </ul>
                 </div>
             </div>
@@ -200,26 +299,67 @@
 
     <section class="projects" id="projects">
         <div class="projects-box">
-            <h2 class="heading">Projects</h2>
+            <h2 class="heading scroll-animate">Projects</h2>
 
             <div class="wrapper">
 
-                <div class="project-item">
-                    <img src="project1.png" alt="Care Compass Hospital Website">
-                    <h2>Care Compass Hospital Website</h2>
-                    <p>A comprehensive hospital management website developed for Care Compass Hospital as part of my web development coursework. Built using HTML, CSS, JavaScript, and PHP with MySQL database. Features include patient registration, appointment booking, doctor profiles, and administrative dashboard. Demonstrates full-stack development skills with database integration and user authentication.</p>
+                <div class="project-item scroll-animate" style="--anim-delay: 0.1s">
+                    <div class="project-image-wrap">
+                        <img src="project1.png" alt="Care Compass Hospital Website">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class='bx bx-link-external'></i> Live Demo</a>
+                            <a href="https://github.com/kaveeshaah?tab=repositories" class="project-link"><i
+                                    class='bx bxl-github'></i> GitHub</a>
+                        </div>
+                    </div>
+                    <h2>Care Compass Hospital</h2>
+                    <div class="project-tech">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                    </div>
+                    <p>A comprehensive hospital management website. Features patient registration, appointment booking,
+                        doctor profiles, and an administrative dashboard.</p>
                 </div>
 
-                <div class="project-item">
-                    <img src="project2.png" alt="EduCore LMS">
-                    <h2>EduCore Learning Management System</h2>
-                    <p>A comprehensive student learning management system developed as my 2nd year final project. Built using React.js for the frontend, Node.js and Express.js for the backend, with PHPMyAdmin for database management. Features include course management, student enrollment, assignment submission, grade tracking, and real-time communication tools. Demonstrates modern full-stack development with responsive design and scalable architecture.</p>
+                <div class="project-item scroll-animate" style="--anim-delay: 0.3s">
+                    <div class="project-image-wrap">
+                        <img src="project2.png" alt="EduCore LMS">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class='bx bx-link-external'></i> Live Demo</a>
+                            <a href="https://github.com/kaveeshaah?tab=repositories" class="project-link"><i
+                                    class='bx bxl-github'></i> GitHub</a>
+                        </div>
+                    </div>
+                    <h2>EduCore LMS</h2>
+                    <div class="project-tech">
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>MySQL</span>
+                    </div>
+                    <p>A student learning management system featuring course management, student enrollment, assignment
+                        submission, grade tracking, and real-time communication tools.</p>
                 </div>
 
-                <div class="project-item">
-                    <img src="project3.png" alt="CozyComfort Blanket System">
-                    <h2>CozyComfort Supply Chain System</h2>
-                    <p>A Service-Oriented Component (SOC) architecture project for CozyComfort blanket manufacturing company, developed for 2nd year Service-Oriented Computing using C# and ASP.NET Web Forms. Features SOAP-based Web Services connecting manufacturers, distributors, and sellers with centralized inventory management, order processing, delivery coordination, and reporting. Implements modular services (UserService, ProductService, OrderService) ensuring scalability and maintainability for future business growth.</p>
+                <div class="project-item scroll-animate" style="--anim-delay: 0.5s">
+                    <div class="project-image-wrap">
+                        <img src="project3.png" alt="CozyComfort Blanket System">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class='bx bx-link-external'></i> Live Demo</a>
+                            <a href="https://github.com/kaveeshaah/CozyComfort_Blankets.git" class="project-link"><i
+                                    class='bx bxl-github'></i> GitHub</a>
+                        </div>
+                    </div>
+                    <h2>CozyComfort Supply Chain</h2>
+                    <div class="project-tech">
+                        <span>C#</span>
+                        <span>ASP.NET</span>
+                        <span>SOAP Services</span>
+                    </div>
+                    <p>A Service-Oriented Component (SOC) architecture project featuring SOAP-based Web Services for
+                        centralized inventory management and order processing.</p>
                 </div>
 
             </div>
@@ -227,27 +367,28 @@
     </section>
 
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
+        <h2 class="heading scroll-animate">Contact <span>Me</span></h2>
 
-        <form action="">
+        <div class="contact-info scroll-animate">
+            <a href="mailto:milanikaveesha.9@gmail.com" class="contact-email">
+                <i class='bx bx-envelope'></i> milanikaveesha.9@gmail.com
+            </a>
+        </div>
+
+        <form action="" class="scroll-animate" style="--anim-delay: 0.2s">
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text"
-                    placeholder="Full Name">
-                    <input type="email"
-                    placeholder="Email Address">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email Address">
                 </div>
                 <div class="input-box">
-                    <input type="number"
-                    placeholder="Phone Number">
-                    <input type="text"
-                    placeholder="Subject">
+                    <input type="number" placeholder="Phone Number">
+                    <input type="text" placeholder="Subject">
                 </div>
             </div>
 
             <div class="input-group-2">
-                <textarea name="" id="" cols="30"
-                rows="10" placeholder="Your Message"></textarea>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
                 <input type="submit" value="Send Message" class="btn">
             </div>
         </form>
@@ -255,7 +396,8 @@
 
     <footer class="footer">
         <div class="social">
-            <a href="https://www.linkedin.com/in/milani-kaveesha-186a89215/" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.linkedin.com/in/milani-kaveesha-186a89215/" aria-label="LinkedIn"><i
+                    class='bx bxl-linkedin'></i></a>
             <a href="https://github.com/kaveeshaah" aria-label="GitHub"><i class='bx bxl-github'></i></a>
             <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
             <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
@@ -284,12 +426,13 @@
         </ul>
 
         <p class="copyright">
-            &copy; 2025 Milani Kaveesha. All rights reserved.
+            &copy; 2026 Milani Kaveesha. All rights reserved.
         </p>
 
     </footer>
-        
+
 
     <script src="script.js"></script>
 </body>
+
 </html>
